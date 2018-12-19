@@ -1,0 +1,66 @@
+/**
+    Viewport breakpoints
+    --------------------
+    Extra small     :   Upto 576px
+    Small           :   576px to 768px
+    Medium          :   768px to 992px
+    Large           :   992px to 1200px
+    Extra-Large     :   above 1200px
+
+    All the commona / global styles and stylesfor Extra-Large screens (>1200px)
+    should be written in the main.css
+**/
+
+@media (max-width: 1200px){
+/* Large */
+}
+
+@media (max-width: 992px){
+/* Medium */
+
+    .wrapper {
+        height: 550px;
+    }
+
+    .wrapper--text-slider {
+        flex: 1 1 60%;
+    }
+
+    .wrapper--image-slider {
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width: 768px){
+/* Small */
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .wrapper {
+        height: auto;
+        flex: 1 1 100%;
+    }
+
+    .wrapper--text-slider {
+        flex: unset;
+    }
+
+    .wrapper--image-slider {
+        flex: unset;
+    }
+
+    .image-slider-group {
+        max-height: 198px;
+    }
+
+    .image-slider-group>div img {
+        max-width: 198px;
+    }
+}
+
+@media (max-width: 576px){
+/* Extra small */
+
+}
